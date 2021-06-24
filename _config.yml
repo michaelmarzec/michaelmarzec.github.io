@@ -1,22 +1,31 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+redcarpet:
+  extensions: ["tables"]
+
+# Permalinks
+permalink:        pretty
+
 # Setup
-title:               Michael
-tagline:             'hopefully a blog2'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 "/michaelmarzec.github.io"
-baseurl:             "https://michaelmarzec.github.io"
-paginate:            5
-permalink:           pretty
-
-# About/contact
+title:            Michael Marzec
+tagline:          hopefully a blog 11
+url:              https://michaelmarzec.github.io/
+paginate:         1
+baseurl:          /
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
-
-# Gems
-plugins:
-  - jekyll-paginate
+  name:           Michael Marzec
+  url:            espn.com
 
 # Custom vars
-version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
+version:          1.0.0
+github:
+  repo:           https://github.com/michaelmarzec/michaelmarzec.github.io
+
+# Header links
+pages_list:
+  About: '/about/'
+  Archive: '/archive/'
+  Website: 'https://michaelmarzec.github.io/'
+  Feed: '/atom.xml'
+
