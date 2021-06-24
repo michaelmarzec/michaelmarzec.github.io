@@ -1,5 +1,4 @@
 # Dependencies
-markdown:         redcarpet
 pygments:         false
 redcarpet:
   extensions: ["tables"]
