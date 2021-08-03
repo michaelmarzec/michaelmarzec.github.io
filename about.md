@@ -8,8 +8,6 @@ title: About
 <!-- </p> -->
 
 
-## Background
-
 Michael Marzec is a (third-person?)
 
 Hello everyone! I am a (first-person)
@@ -17,6 +15,7 @@ Hello everyone! I am a (first-person)
 ## Links
 
 [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294)
+
 [GitHub](https://github.com/michaelmarzec)
 
 <!-- * Built for [Jekyll](https://jekyllrb.com) -->
