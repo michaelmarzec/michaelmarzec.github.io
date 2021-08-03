@@ -10,7 +10,9 @@ title: About
 
 ## Background
 
-Michael Marzec
+Michael Marzec is a (third-person?)
+
+Hello everyone! I am a (first-person)
 
 ## Links
 
