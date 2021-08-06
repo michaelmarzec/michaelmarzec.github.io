@@ -42,9 +42,9 @@ gems:
 exclude:
   - "/vendor/"
 
-# Collections
-collections:
-  - talks
+# # Collections
+# collections:
+#   - talks
 
 #
 # Social settings are used in two places:
