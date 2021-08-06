@@ -78,15 +78,15 @@ social:
 
   - name: GitHub
     icon: github
-    username: nikhita
-    url: https://github.com/nikhita
+    username: michaelmarzec
+    url: https://github.com/michaelmarzec
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
-    username: Nikhita Raghunath
-    url: https://in.linkedin.com/in/nikinath
+    username: Michael Marzec
+    url: https://www.linkedin.com/in/michael-marzec-16a59294
     desc: Connect with me on LinkedIn
     share: true
 
