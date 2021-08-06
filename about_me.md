@@ -38,7 +38,7 @@ For all the security geeks out there, my public key is [B944F27A57CF61F5](https:
 Legal boilerplate: The opinions expressed on this site are mine alone.
  -->
 
- ## Background
+## Background
 
 Michael Marzec is a (third-person?)
 
@@ -46,9 +46,10 @@ Hello everyone! I am a (first-person)
 
 ## Links
 
-[LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294)
+See below for my email, linkedin and github links. Please feel free to reach out!
+<!-- [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294) -->
 
-[GitHub](https://github.com/michaelmarzec)
+<!-- [GitHub](https://github.com/michaelmarzec) -->
 
 <!-- * Built for [Jekyll](https://jekyllrb.com) -->
 <!-- * Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com) -->
@@ -56,4 +57,4 @@ Hello everyone! I am a (first-person)
 
 <!-- Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo). -->
 
-Please feel free to reach out at: michaelmarzec11@gmail.com
+<!-- Please feel free to reach out at: michaelmarzec11@gmail.com -->
