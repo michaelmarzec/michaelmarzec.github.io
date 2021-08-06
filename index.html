@@ -3,12 +3,9 @@ layout: page
 title: Home
 ---
 
-<!-- <p class="message"> -->
-  <!-- Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on! -->
-<!-- </p> -->
 
 
-Michael Marzec is a (third-person?)
+<!--
 
 
 Hello everyone! I am a (first-person)
@@ -26,46 +23,26 @@ Hello everyone! I am a (first-person)
 
 Please feel free to reach out at: michaelmarzec11@gmail.com
 
+ -->
 
 
 
 
-
-<!-- ---
-layout: default
+---
+layout: page
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
+<div class="home">
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
+        {{ Michael Marzec is a (third-person?)}}
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
- -->
+
