@@ -1,22 +1,22 @@
 
 # Site settings
-title: Nikhita Raghunath
-name: Nikhita Raghunath
-subtitle: Learnings, Ramblings and Rants
-email: hello@nikhita.dev
+title: Michael Marzec
+name: Michael Marzec
+subtitle: An Attempted Data Science Blog
+email: michaelmarzec11@gmail.com
 description: >
-  A personal website about technical things I find useful. Also, random ramblings and rants.
+  A personal blog.
 baseurl: ""
-url: "https://www.nikhita.dev"
-twitter_username: TheNikhita
-github_username:  nikhita
-disqus_baseurl: "https://nikhita.github.io/"
-disqus_shortname: https-nikinath-github-io
+url: https://michaelmarzec.github.io/
+twitter_username: mm
+github_username:  mm
+disqus_baseurl: mm
+disqus_shortname: mm
 permalink: :title
 cover: "/assets/header_image.jpg"
 logo: "/assets/nr-logo.jpg"
 avatar: "/assets/headshot.jpg"
-ga_tracking_id: "UA-82647777-1"
+# ga_tracking_id: "UA-82647777-1"
 
 # Build settings
 markdown: kramdown
@@ -29,7 +29,7 @@ defaults:
     scope:
       path: ""
     values:
-      author: "Nikhita Raghunath"
+      author: "Michael Marzec"
 
 
 # External gems
