@@ -7,8 +7,9 @@
     </a> -->
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <a href="{{ site.baseurl }}/" class="logo"> Home </a>
-        <a> &ensp; </a>
+        <a href="{{ site.baseurl }}/" class="nav-link"> Home </a>
+        <a> &emsp; </a> # <!-- &ensp; 2 spaces (currently using 4 spaces)-->
+        <!-- <a href="{{ site.baseurl }}/" class="logo"> Home </a> -->
         {% for page in site.pages %}
           {% if page.title and page.main_nav != false %}
           <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
