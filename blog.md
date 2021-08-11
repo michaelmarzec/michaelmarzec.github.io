@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 description: Michael Marzec is a data scientist...
-permalink: about/
+permalink: /about/
 ---
 <!-- <br>
 
@@ -40,11 +40,11 @@ Legal boilerplate: The opinions expressed on this site are mine alone.
 
 ## Background
 
-Hello everyone and welcome to my up-and-coming website. Soon, I'll have a full "about me" section along and maybe some blog posts too.
+Hello everyone and welcome to my up-and-coming website. Soon, I'll have a full "about me" section and maybe some blog posts too.
 
 ## Links
 
-See the following links for my [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294/), [GitHub](https://github.com/michaelmarzec/) and email (michaelmarzec11@gmail.com). Please feel free to reach out!
+You can find me on [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294/), [GitHub](https://github.com/michaelmarzec/) and email (michaelmarzec11@gmail.com). Please feel free to reach out!
 <!-- [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294) -->
 
 <!-- [GitHub](https://github.com/michaelmarzec) -->
