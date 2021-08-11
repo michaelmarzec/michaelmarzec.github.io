@@ -13,7 +13,7 @@ disqus_baseurl: mm
 disqus_shortname: mm
 permalink: :title
 cover: "/assets/header_image.jpg"
-logo: "/assets/nr-logo.jpg"
+# logo: "/assets/nr-logo.jpg"
 avatar: "/assets/headshot.jpg"
 # ga_tracking_id: "UA-82647777-1"
 
