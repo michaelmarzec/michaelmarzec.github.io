@@ -44,7 +44,7 @@ Hello everyone and welcome to my up-and-coming website. Soon, I'll have a full "
 
 ## Links
 
-See the following links for my [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294/), [GitHub](https://github.com/michaelmarzec/) and [email](michaelmarzec11@gmail.com). Please feel free to reach out!
+See the following links for my [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294/), [GitHub](https://github.com/michaelmarzec/) and email (michaelmarzec11@gmail.com). Please feel free to reach out!
 <!-- [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294) -->
 
 <!-- [GitHub](https://github.com/michaelmarzec) -->
