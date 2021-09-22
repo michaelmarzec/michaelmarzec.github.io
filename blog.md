@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: ABOUT
 description: Michael Marzec is a data scientist...
 permalink: /about/
 ---
