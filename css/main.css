@@ -159,7 +159,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  color: #333;
+  color: #212121;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.8; }
@@ -198,7 +198,7 @@ p {
   margin: 0 0 14.4px; }
 
 a {
-  color: #333;
+  color: #212121;
   font-weight: 750;
   text-decoration: none; }
   a:active, a:focus, a:hover {
