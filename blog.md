@@ -40,11 +40,11 @@ Legal boilerplate: The opinions expressed on this site are mine alone.
 
 ## Background
 
-Hello everyone and welcome to my up-and-coming website. Soon, I'll have a full "about me" section and maybe some blog posts too.
+Michael Marzec is a full-time student at the Georgia Tech Masters in Analytics program with an expected graduation date of December of 2021. In addition, he is a Senior Associate within the PricewaterhouseCoopers Data & Technology Advisory group, and an aspiring sports data scientist.
 
-## Links
+## Contact
 
-You can find me on [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294/), [GitHub](https://github.com/michaelmarzec/) and email (michaelmarzec11@gmail.com). Please feel free to reach out!
+You can find him on [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294/), [GitHub](https://github.com/michaelmarzec/) and email (michaelmarzec11@gmail.com). Please feel free to reach out!
 <!-- [LinkedIn](https://www.linkedin.com/in/michael-marzec-16a59294) -->
 
 <!-- [GitHub](https://github.com/michaelmarzec) -->
