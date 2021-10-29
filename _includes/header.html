@@ -2,10 +2,10 @@
   <div class="navigation-wrapper">
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><a href="{{ site.baseurl }}">{{ "HOME" }}</a>
+        <li class="nav-link"><a href="{{ site.site_baseurl }}">{{ "HOME" }}</a>
         {% for page in site.pages %}
           {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <li class="nav-link"><a href="{{ page.url | prepend: site.site_baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </ul>
