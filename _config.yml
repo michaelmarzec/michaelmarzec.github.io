@@ -6,7 +6,7 @@ subtitle: a (attempted) data science blog #hyperlink the "A" to this english sta
 email: michaelmarzec11@gmail.com
 description:
 # baseurl: "https://michaelmarzec.github.io/"
-# site_baseurl: "https://michaelmarzec.github.io/"
+site_baseurl: "https://michaelmarzec.github.io/"
 url: https://michaelmarzec.github.io/
 twitter_username: 
 github_username:  michaelmarzec
