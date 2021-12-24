@@ -4,7 +4,7 @@
  <title>Michael Marzec</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2021-10-29T14:19:10-04:00</updated>
+ <updated>2021-12-23T18:55:52-06:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -15,7 +15,7 @@
  <entry>
    <title>sample post</title>
    <link href="http://localhost:4000/sample-post"/>
-   <updated>2021-08-10T00:00:00-04:00</updated>
+   <updated>2021-08-10T00:00:00-05:00</updated>
    <id>http://localhost:4000/sample-post</id>
    <content type="html">&lt;p&gt;This is a sample post that one day will be changed into a real post.&lt;/p&gt;
 </content>
