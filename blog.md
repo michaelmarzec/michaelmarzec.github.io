@@ -9,6 +9,8 @@ permalink: /about/
 ## Background
 
 Michael Marzec is a recent graduate of the Georgia Tech Masters in Analytics program. In addition, he is a Senior Associate within the PricewaterhouseCoopers Data & Technology Advisory group, and an aspiring data scientist.
+<!--  -->
+<!-- His skillset includes a full stack background including experience with SQL, Python, R, Tableau and Power BI -->
 
 ## Contact
 
