@@ -16,14 +16,14 @@ Develop a tech stack that will (for cheap, if not free) provide a clean, easy-to
 
 ### Data Extraction
 
-All data is extracted using Python (BeautifulSoup, UrlLib, etc.), automated via AWS Lambda (nightly), stored in S3, and pulled from Ben Falk’s highly recommended [cleaningtheglass.com](https://cleaningtheglass.com/). A couple of lessons learned:
+All data is extracted using Python (BeautifulSoup, UrlLib, etc.), automated via AWS Lambda (nightly), stored in S3, and pulled from Ben Falk’s <ins>highly</ins> recommended <ins>[cleaningtheglass.com](https://cleaningtheglass.com/)</ins>. A couple of lessons learned:
 - When developing an AWS Lambda function, keep it lightweight! There is a compressed limit of 50mb.
 - In this instance, I shifted from storing data in a Parquet file (my preferred non-database storage method) to a CSV, so I could remove the PyArrow library. 
 - [Linked](https://github.com/keithrozario/Klayers/blob/master/deployments/python3.8/arns/us-east-2.csv) is a fantastic resource for Python ARNs.
 
 ### Front End
 
-The web framework is developed via the Flask library. Data is ingested from S3 (shoutout Boto3), which conveniently creates an automated feed due to the Lambda function, then manipulated via a few basic Pandas operations which return the *[sortable]*(https://flask-table.readthedocs.io/en/stable/#sortable-tables) table and time-series data to HTML templates.
+The web framework is developed via the Flask library. Data is ingested from S3 (shoutout Boto3), which conveniently creates an automated feed due to the Lambda function, then manipulated via a few basic Pandas operations which return the *[sortable](https://flask-table.readthedocs.io/en/stable/#sortable-tables)* table and time-series data to HTML templates.
 
 The HTML table template uses a basic structure and a simple CSS file (i.e., the bulk of the research/work was completed via the Flask-Table library). The HTML time-series template uses chart.js and a slightly more complex CSS file:
 - I manually created a json set for each team… it felt like that could have been completed with a more automated for-loop type solution.
