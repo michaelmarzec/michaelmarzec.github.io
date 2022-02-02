@@ -4,6 +4,8 @@ title: "NBA-Age Analysis: Infrastructure"
 comments: false
 ---
 
+<h3 style="text-align: center;"><a href="https://nbaage.com/"><ins>nbaage.com</ins></a></h3>
+
 When analysts, media members, and fans discuss the average age of an NBA team, there’s often a missing nuance. Typically, it’s a reference like “Team X is the 5th youngest team in the NBA” and that marker results from a quick average of every roster member. In my opinion, this fails to convey an accurate representation as that average is skewed by low usage and end-of-bench players.
 
 #### Information Objective

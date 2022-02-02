@@ -4,7 +4,7 @@
  <title>Michael Marzec</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2022-02-01T20:30:43-07:00</updated>
+ <updated>2022-02-01T20:40:31-07:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -17,7 +17,9 @@
    <link href="http://localhost:4000/nbaageanalysis-infrastructure"/>
    <updated>2022-02-01T00:00:00-07:00</updated>
    <id>http://localhost:4000/nbaageanalysis-infrastructure</id>
-   <content type="html">&lt;p&gt;When analysts, media members, and fans discuss the average age of an NBA team, there’s often a missing nuance. Typically, it’s a reference like “Team X is the 5th youngest team in the NBA” and that marker results from a quick average of every roster member. In my opinion, this fails to convey an accurate representation as that average is skewed by low usage and end-of-bench players.&lt;/p&gt;
+   <content type="html">&lt;h3 style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://nbaage.com/&quot;&gt;&lt;ins&gt;nbaage.com&lt;/ins&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;When analysts, media members, and fans discuss the average age of an NBA team, there’s often a missing nuance. Typically, it’s a reference like “Team X is the 5th youngest team in the NBA” and that marker results from a quick average of every roster member. In my opinion, this fails to convey an accurate representation as that average is skewed by low usage and end-of-bench players.&lt;/p&gt;
 
 &lt;h4 id=&quot;information-objective&quot;&gt;Information Objective&lt;/h4&gt;
 
