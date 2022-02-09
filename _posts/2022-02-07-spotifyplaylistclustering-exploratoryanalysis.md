@@ -6,7 +6,7 @@ comments: false
 
 I love the ease of adding a song to my Spotify ‘Liked Songs’, but I am admittedly too lazy to create and update playlists. This is fine until I want to shuffle my ‘Liked Songs’ and suddenly my playlist jumps from Prince to Leon Bridges to Spoon.
 
-Spotify provides its users the option to filter their liked songs via the various genres. While this offers a convenient solution, I feel that genre filters can lack a certain nuance. An album will be classified as a specific genre, but its tracklist can feature a variety of song types. For example, a “pop” album could feature a mixture of high-energy workout music, background working melodies, and also something to play during a family dinner. 
+Spotify provides its users the option to filter their liked songs by genre. While this offers a convenient solution, I feel that genre filters can lack a certain nuance. An album will be classified as a specific genre, but its tracklist can feature a variety of song types. For example, a “pop” album could feature a mixture of high-energy workout music, background working melodies, and also something to play during a family dinner. 
 
 Some artists are more inclined to create mixed-genre albums than others (e.g., James Blake, Beck, Kanye West). However, regardless of the artist or genre, I’d like to use this concept to create automated and customized playlists from my ‘Liked Songs’ Spotify library.
 
