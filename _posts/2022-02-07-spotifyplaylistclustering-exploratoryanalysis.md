@@ -17,7 +17,7 @@ Spotify provides a fantastic <ins>[API](https://developer.spotify.com/documentat
 2. Extract key features for each song.
 3. Create and populate playlists.
 
-The first and third points are fairly self-explanatory, but the ‘key features’ are a custom Spotify API output. These includes characteristics like ‘danceability’, ’energy’, and ‘tempo’ among others listed <ins>[here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)</ins>. Thus, using these API functions, I can easily download a list of every liked song, about 12 descriptive variables for each song, and ultimately, group these songs into new playlists.
+The first and third points are fairly self-explanatory, but the ‘key features’ are a custom Spotify API output. These include characteristics like ‘danceability’, ’energy’, and ‘tempo’ among others listed <ins>[here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)</ins>. Thus, using these API functions, I can easily download a list of every liked song, about 12 descriptive variables for each song, and ultimately, group these songs into new playlists.
 
 In my opinion, this solution’s most significant assumption is its reliance on Spotify’s pre-determined audio features. While they are convenient and easy to use, the solution is dependent on Spotify’s calculated audio features reliably encapsulating each song’s, for lack of a better word, vibe. Essentially, the audio features provide a great foundation for this project, but given the appropriate access, I would love to leverage audio files (e.g., .wav data) to analyze the raw audio data via a library such as <ins>[Librosa](https://librosa.org/doc/latest/index.html)</ins>.
 
@@ -45,7 +45,7 @@ After selecting the principal components, this data can be fed to a clustering a
 - Technical
 	- The appropriate number of clusters can be analyzed via an inertia plot. Similar to PCA, it’s an inexact science that commonly uses the elbow method.
 
-Using the following inertia plot, I selected 11 clusters (which frankly feels like an arbitrary decision) as my ‘technical’ approach fur further evaluation:
+Using the following inertia plot, I selected 11 clusters (which frankly feels like an arbitrary decision) as my ‘technical’ approach for further evaluation:
 
 <img src="./assets/Spotify-Playlist-Classification/cluster_inertiaplot.png" style="float: center; width: 450px">
 
