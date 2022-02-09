@@ -16,7 +16,7 @@ Spotify provides a fantastic <ins>[API](https://developer.spotify.com/documentat
 2. Extract key features for each song.
 3. Create and populate playlists.
 
-The first and third points are fairly self-explanatory, but the ‘key features’ is a custom Spotify API output. This includes characteristics like ‘danceability’, ’energy’, and ‘tempo’ among others listed <ins>[here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)</ins>. Thus, using these API functions, I can easily download a list of every liked song, about 12 descriptive variables for each song, and ultimately, group these songs into new playlists.
+The first and third points are fairly self-explanatory, but the ‘key features’ are a custom Spotify API output. These includes characteristics like ‘danceability’, ’energy’, and ‘tempo’ among others listed <ins>[here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)</ins>. Thus, using these API functions, I can easily download a list of every liked song, about 12 descriptive variables for each song, and ultimately, group these songs into new playlists.
 
 In my opinion, this solution’s most significant assumption is its reliance on Spotify’s pre-determined audio features. While they are convenient and easy to use, the solution is dependent on Spotify’s calculated audio features reliably encapsulating each song’s, for lack of a better word, vibe. Essentially, the audio features provide a great foundation for this project, but given the appropriate access, I would love to leverage audio files (e.g., .wav data) to analyze the raw audio data via a library such as <ins>[Librosa](https://librosa.org/doc/latest/index.html)</ins>.
 
@@ -24,7 +24,7 @@ In my opinion, this solution’s most significant assumption is its reliance on 
 
 After extracting the descriptive variables, I standardized the data and applied principal component analysis (PCA), which among other benefits, reduces dimensionality and the risk of multicollinearity.
 
-When using PCA, the end-user needs to determine the number of ‘principal components’ to keep for any subsequent processing. There are a couple of typical options:
+When using PCA, the end user needs to determine the number of ‘principal components’ to keep for any subsequent processing. There are a couple of typical options:
 - Visualize the principal components using a scree plot and determine the appropriate number to keep via ‘elbow’ analysis.
 - Determine the preferred variance to ‘capture’ via the principal components and let that determine the number to keep.
 
@@ -48,7 +48,7 @@ Using the following inertia plot, I selected 11 clusters (which frankly feels li
 
 <img src="./assets/Spotify-Playlist-Classification/cluster_inertiaplot.png" style="float: center; width: 450px">
 
-Note that so far I’ve avoided mentioning which clustering algorithm is being used. To this point, I’ve used <ins>[k-means clustering (via scikit-learn library)](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)</ins>. There are countless clustering algorithms, each of which uses another variation to achieve the same objective: sort each data point into groups with other similar data points.
+Note that so far I’ve avoided mentioning which clustering algorithm is being implemented. To this point, I’ve used <ins>[k-means clustering (via scikit-learn library)](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)</ins>. There are countless clustering algorithms, each of which uses another variation to achieve the same objective: sort each data point into groups with other similar data points.
 
 In the following evaluation section, I experiment with k-means, birch, dbscan, and gaussian clustering. The experiment results highlight some differences across each algorithm. However, the following graphic is a personal favorite which visualizes the results of a handful of clustering algorithms based on the data distribution:
 
@@ -69,7 +69,7 @@ First, using clustering maps based on two principal components, the dbscan resul
 <img src="./assets/Spotify-Playlist-Classification/v4_cluster_scatter_plot.png"
      style="float: center" style="width: 400px;">
 
-Next, we can see very similar cluster patterns applied across the remaining algorithms:
+Next, we can see very similar cluster patterns from the remaining algorithms:
 
 <table><tr>
 <td> <img src="./assets/Spotify-Playlist-Classification/v2_cluster_scatter_plot.png" alt="Drawing" style="width: 250px;"/> </td>
@@ -77,7 +77,7 @@ Next, we can see very similar cluster patterns applied across the remaining algo
 <td> <img src="./assets/Spotify-Playlist-Classification/v5_cluster_scatter_plot.png" alt="Drawing" style="width: 250px;"/> </td>
 </tr></table>
 
-Considering the similarity in the graphs, I’m going to move forward with the k-means algorithm (V2). The following shows 11 vs 20 playlists in a cluster:
+Considering the similarity in the graphs, I’m going to move forward with the k-means algorithm (V2). The following shows 11 vs 20 playlists/clusters:
 
 <table><tr>
 <td> <img src="./assets/Spotify-Playlist-Classification/v2_cluster_scatter_plot.png" alt="Drawing" style="width: 350px;"/> </td>
@@ -85,7 +85,7 @@ Considering the similarity in the graphs, I’m going to move forward with the k
 </tr></table>
 
 
-In all honesty, the cluster images don’t leave me with a strong preference. There are a lot of similar groupings with slightly more granular breakdowns. As such, I’m going to move forward with 20 playlists (i.e., my non-technical approach) and, as mentioned, I’d prefer to use a variance threshold (rather than an ad-hoc principal component decision). This leaves me with V7 as my final model to create my customized Spotify playlists.
+In all honesty, the cluster plots don’t leave me with a strong preference. There are a lot of similar groupings with slightly more granular breakdowns. As such, I’m going to move forward with 20 playlists (i.e., my non-technical approach) and, as mentioned, I’d prefer to use a variance threshold (rather than an ad-hoc principal component decision). This leaves me with V7 as my final model to create my customized Spotify playlists.
 
 #### Conclusion and Future Efforts
 
