@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spotify Playlist Clutering: Exploratory Analysis"
+title: "Spotify Playlist Clustering: Exploratory Analysis"
 comments: false
 ---
 
