@@ -32,7 +32,7 @@ Using ‘Open’ and ‘Close’ pricing for stock market analysis can be a bit 
  
 ### Data Extraction
 
-<ins>[Coinbase](https://www.coinbase.com/)</ins> provides an <ins>[easy-to-use API](https://docs.cloud.coinbase.com/exchange/reference/exchangerestapi_getproductcandles)</ins>. By providing a symbol (e.g., BAT/BTC, which represents BAT value measured in terms of Bitcoin), start date, and end date (there are options for additional parameters per the API documentation) I receive a daily dataset that includes open, close, high, low and volume fields. However, there were a few issues with the BAT data quality, so I resorted to temporarily using an <ins>[export from Yahoo Finance](https://finance.yahoo.com/quote/BAT-USD/history?period1=1498867200&period2=1646006400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true) (which I somehow had not even realized Yahoo was now providing cryptocurrency data). Altogether, my data consists of a ‘BAT/BTC’, ‘BAT/USD’ and ‘BTC/USD’ dataset ranging from 1/1/2021 to 2/28/2022.
+<ins>[Coinbase](https://www.coinbase.com/)</ins> provides an <ins>[easy-to-use API](https://docs.cloud.coinbase.com/exchange/reference/exchangerestapi_getproductcandles)</ins>. By providing a symbol (e.g., BAT/BTC, which represents BAT value measured in terms of Bitcoin), start date, and end date (there are options for additional parameters per the API documentation) I receive a daily dataset that includes open, close, high, low and volume fields. However, there were a few issues with the BAT data quality, so I resorted to temporarily using an <ins>[export from Yahoo Finance](https://finance.yahoo.com/quote/BAT-USD/history?period1=1498867200&period2=1646006400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true)</ins> (which I somehow had not even realized Yahoo was now providing cryptocurrency data). Altogether, my data consists of a ‘BAT/BTC’, ‘BAT/USD’ and ‘BTC/USD’ dataset ranging from 1/1/2021 to 2/28/2022.
  
 ### Exploratory Data Analysis (EDA)
 
@@ -88,7 +88,7 @@ For objective and number of estimators, I ran a few custom GridSearches (i.e., i
 
 See the following for a quick table of my test results:
 
-<img src="./assets/BAT-Crypto-Analysis/validation_results.png" style="float: center">
+<img src="./assets/BAT-Crypto-Analysis/validation_results.png" style="float: center; width: 450px">
 
 As you can see, the results are fairly consistent, but the expanding-window provides the best measure. This isn’t shocking considering both the difference in training dataset size and the general lack of data in the walk-forward dataset size. In stock trading, you might use windows ranging from 1 to 10 years. 
 
@@ -100,7 +100,7 @@ In stock trading, a ‘technical’ strategy tends to rely on short-term data (i
 
 To evaluate ROI, as mentioned, I converted each of the four ‘portfolios’ to USD. First, I compared the three ‘holding’ strategies:
 
-<img src="./assets/BAT-Crypto-Analysis/roi_plot.png" style="float: center">
+<img src="./assets/BAT-Crypto-Analysis/roi_plot.png" style="float: center; width: 450px">
 
 As expected, the USD approach provided the most stable results and even finished with the highest value. However, while holding BAT was clearly the most volatile approach it also at moments provided the highest value by a significant margin (reaching nearly $2,000).
 
