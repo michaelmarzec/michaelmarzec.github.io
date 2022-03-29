@@ -49,7 +49,7 @@ I also plotted their rolling correlations and a quick summary of correlation tab
 
 <table><tr>
 <td> <img src="./assets/BAT-Crypto-Analysis/rolling_correlation.png" alt="Drawing" style="width: 350px;"/> </td>
-<td> <img src="./assets/BAT-Crypto-Analysis/correlation_table.png" alt="Drawing" style="width: 450px;"/> </td>
+<td> <img src="./assets/BAT-Crypto-Analysis/correlation_table.png" alt="Drawing" style="width: 550px;"/> </td>
 </tr></table>
 
 Quickly, we can see that BAT/USD and and BTC/USD are highly correlated (87%). This indicates trading between the two likely has marginal upside. However, we can also see negative correlations between BAT/BTC and both BAT/USD and BTC/USD. Initially, I figure this is likely intertwined with BTC pricing (per USD) – I expand on this thought in the Future Efforts section. However, for now, I’ll focus on modeling BAT against the USD, rather than BTC.
