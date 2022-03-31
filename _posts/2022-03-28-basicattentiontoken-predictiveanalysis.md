@@ -134,6 +134,6 @@ The trading strategy returned the highest value on the final date. However, per 
 	- There are lots of other usable indicators to suggest when to buy/sell. I’d like to experiment with volume analysis and variance analysis, which can include indicators like on-balance volume, CCI, momentum, and simple-moving average.
 	- Finally, I need to think through how to implement bitcoin as an option for the trading strategy. At first glance, I think this is where implementing a longer prediction period (e.g., a week into the future) could be beneficial. Alternatively, the instability of predicting further into the future could add volatility to the trading strategy that might ultimately reduce its effectiveness.
 
-Thanks for reading, and if you have any comments or questions please feel free to reach out via <ins>[email](michaelmarzec11@gmail.com)</ins>!
+Thanks for reading, and if you have any comments or questions please feel free to reach out via email (michaelmarzec11@gmail.com)!
 
 
