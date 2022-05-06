@@ -6,15 +6,15 @@ comments: false
 
 <h3 style="text-align: center;"><a href="https://nbaage.com/"><ins>nbaage.com</ins></a></h3>
 
-When analysts, media members, and fans discuss the average age of an NBA team, there’s often a missing nuance. Often, there will be a statement like “Team X is the 5th youngest team in the NBA”, and that information results from a quick average of every roster member. In my opinion, this fails to convey an accurate representation, as that average is skewed by low usage and end-of-bench players.
+When analysts, media members, and fans discuss the average age of an NBA team, there’s often a missing nuance. Typically, there will be a statement like “Team X is the 5th youngest team in the NBA”, and that information results from a quick average of every member of the roster. In my opinion, this fails to convey an accurate representation, as that average is skewed by low usage and end-of-bench players.
 
 #### Information Objective
 
-My goal is to present an innovative view of NBA ages. Rather than convey that the Minnesota Timberwolves are the 7th youngest team, I’d like to explain that the Timberwolves are the 5th youngest team when weighted by minutes and the 4th youngest team when weighted by usage rate. This could indicate that the Wolves rely on young players surrounded by older low-usage veterans. We can also see that their team-wide average is pulled up by the ‘Combo’ position (i.e., Patrick Beverly). Over a full season, perhaps we can identify inflection points such as key injuries or when a team decides to ‘tank.’ 
+My goal is to present an innovative view of NBA team ages. Rather than convey that the Minnesota Timberwolves are the 7th youngest team, I’d like to explain that the Timberwolves are the 5th youngest team when weighted by minutes and the 4th youngest team when weighted by usage rate. This could indicate that the Wolves rely on young players surrounded by older low-usage veterans. We can also see that their team-wide average is pulled up by the ‘Combo’ position (i.e., Patrick Beverly). Over a full season, perhaps we can identify inflection points such as key injuries or when a team decides to ‘tank'.
 
 #### Infrastructure Objective
 
-During development, I aimed to create a tech stack that will (for cheap, if not free) provide a clean, easy-to-interpret, and automated presentation of NBA team ages. This infrastructure should reduce, if not eliminate, manual upkeep, allowing for time spent analyzing the data and enhancing website functionality.
+During development, I aimed to create a tech stack that will (for cheap, if not free) provide a clean, easy-to-interpret, and automated presentation of NBA team ages. This infrastructure should reduce, if not entirely eliminate, manual upkeep, allowing for time spent analyzing the data and enhancing website functionality.
 
 #### Data Extraction
 
@@ -37,9 +37,11 @@ The HTML time-series template uses chart.js and a slightly more complex CSS file
 
 This website might not exist without <ins>[Zappa](https://github.com/zappa/Zappa)</ins>. For anyone unfamiliar, the library uses AWS Lambda (as such, this website leverages Lambda twice … perhaps another point for improvement) to serve a Python application and connect it via Amazon’s API Gateway. Zappa’s user interface requests a few basic parameters, and a quick Google search will provide helpful hints like leveraging the pre-built slim_handler, using the AWS us-east-2 region, and the ‘zappa tail’ function for troubleshooting.
 
+#### Custom Domains: Process Walkthrough 
+
 In addition, Zappa allows for custom domains. The following is a quick walkthrough for any newcomers that would like to consolidate the research process:
 - I love <ins>[Google Domains](https://domains.google.com/)</ins>. It has an accessible interface, which is simple to maintain and does not require managing another new website account (assuming you already have a Google account). Buy your favorite domain and move along.
-- In the AWS Certificate Manager, request a ‘Public Certificate’, enter a domain name, and request a DNS validation. Once this is available, select the option to ‘Create records in Route 53.’
+- In the AWS Certificate Manager, request a ‘Public Certificate’, enter a domain name, and request a DNS validation. Once this is available, select the option to ‘Create records in Route 53’.
 - In AWS Route 53, there is an NS-Type record name for your domain. Copy the four NS ‘routes’ (e.g., ns-1000.awsdns-11.org.), open the DNS:Custom Name Servers tab in Google Domains, and save the four different NS values.
 - The custom domain should now be active. Take the ARN value from your AWS Certificate page, and add the following in your zappa_settings.json file:
 “certificate_arn”: “arn_value”
