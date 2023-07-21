@@ -1,16 +1,15 @@
 ---
 layout: page
 title: ABOUT
-# description: Michael Marzec is a data scientist...
 permalink: /about/
 ---
 
 
 ## Background
 
-Michael Marzec is a recent graduate of the Georgia Tech Masters in Analytics program. In addition, he is a Senior Associate within the PricewaterhouseCoopers Data & Technology Advisory group, and an aspiring data scientist.
-<!--  -->
-<!-- His skillset includes a full stack background including experience with SQL, Python, R, Tableau and Power BI -->
+Michael Marzec is a Senior Data Analyst for [Overjet](https://www.overjet.ai/), a Series B Dental AI platform. Previously, he worked as a Senior Associate within the PricewaterhouseCoopers Data & Technology Adivsory group. He holds an M.S. in Data Analytics from Georgia Tech and an M.S. in Accounting from Boston College, where he also received his undergraduate degree in Accounting & Business Analytics from the Carroll School of Management.
+
+In his freetime he enjoys working on various data-focused projects, including in areas such as basketball, tennis, and golf.
 
 ## Contact
 
