@@ -316,6 +316,7 @@ pre code.hljs {
   box-shadow: 0 2px #70aad0;
   padding: 0 1em;
   margin: 0;
+  text-align: center;
   /*
   *	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
   */ }
@@ -354,7 +355,10 @@ pre code.hljs {
     .navigation .logo span {
       font-size: 1.25em; }
   .navigation li {
-/*    float: center;*/
+    float: inline;
+  }
+  .navigation a {
+    display: inline-block;
   }
   .navigation nav {
     float: none;
@@ -379,7 +383,7 @@ pre code.hljs {
       display: block; }
   .navigation ul li.nav-link {
     display: block;
-    text-align: right;
+    text-align: center;
     width: 100%;
     padding: 0.25em 0; }
     @media screen and (min-width: 768px) {
