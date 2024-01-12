@@ -354,11 +354,11 @@ pre code.hljs {
     .navigation .logo span {
       font-size: 1.25em; }
   .navigation nav {
-    float: none;
+    float: left;
     padding: 1.25em 0; }
     @media screen and (min-width: 768px) {
       .navigation nav {
-        float: left;
+        float: right;
         line-height: 1.5em; } }
   .navigation ul.navigation-menu {
     clear: both;
