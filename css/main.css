@@ -355,7 +355,7 @@ pre code.hljs {
     .navigation .logo span {
       font-size: 1.25em; }
   .navigation li {
-    float: inline;
+    float: left;
   }
   .navigation a {
     display: inline-block;
