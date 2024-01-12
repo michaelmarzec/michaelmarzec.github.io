@@ -333,6 +333,9 @@ pre code.hljs {
     margin-left: auto;
     margin-right: auto;
     position: relative; }
+  .navigation .nav {
+    position: left;
+  }
     .navigation .navigation-wrapper::after {
       clear: both;
       content: "";
@@ -376,7 +379,7 @@ pre code.hljs {
       display: block; }
   .navigation ul li.nav-link {
     display: block;
-    text-align: left;
+    text-align: right;
     width: 100%;
     padding: 0.25em 0; }
     @media screen and (min-width: 768px) {
