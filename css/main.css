@@ -230,10 +230,10 @@ html {
   box-sizing: inherit; }
 
 /*
-*	Variables
+* Variables
 */
 /*
-*	Globals
+* Globals
 */
 html, body {
   margin: 0;
@@ -310,15 +310,14 @@ pre code.hljs {
           padding: 9em 1em !important; } }
 
 /*
-*	Header
+* Header
 */
 .navigation {
   box-shadow: 0 2px #70aad0;
   padding: 0 1em;
   margin: 0;
-  text-align: left;
   /*
-  *	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
+  * Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
   */ }
   .navigation .navigation-menu-button {
     display: block;
@@ -380,7 +379,7 @@ pre code.hljs {
       display: block; }
   .navigation ul li.nav-link {
     display: block;
-    text-align: left;
+    text-align: right;
     width: 100%;
     padding: 0.25em 0; }
     @media screen and (min-width: 768px) {
@@ -399,17 +398,17 @@ pre code.hljs {
       padding-right: 1em; } }
 
 /*
-*	Body
+* Body
 */
 .page-content {
   /*
-  *	index.html
+  * index.html
   */
   /*
-  *	Posts
+  * Posts
   */
   /*
-  *	Pages
+  * Pages
   */ }
   .page-content .wrapper {
     max-width: 48em;
@@ -593,20 +592,20 @@ pre code.hljs {
     padding-bottom: 0.5em; }
 
 /*
-*	Footer
+* Footer
 */
 .site-footer {
   padding: 1em 1em 2em 1em;
   background-color: #70aad0;
   color: #fff;
   /*
-  *	Site Navigation (left)
+  * Site Navigation (left)
   */
   /*
-  *	Contact Info (center)
+  * Contact Info (center)
   */
   /*
-  *	Site Description/Signature (right)
+  * Site Description/Signature (right)
   */ }
   .site-footer a {
     color: #fff; }
