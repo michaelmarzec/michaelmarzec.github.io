@@ -354,7 +354,7 @@ pre code.hljs {
     .navigation .logo span {
       font-size: 1.25em; }
   .navigation li {
-    float: center;
+/*    float: center;*/
   }
   .navigation nav {
     float: none;
