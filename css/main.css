@@ -363,6 +363,7 @@ pre code.hljs {
   .navigation ul.navigation-menu {
     clear: both;
     display: none;
+    float: left;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
