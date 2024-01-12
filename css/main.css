@@ -357,9 +357,6 @@ pre code.hljs {
   .navigation li {
     float: left;
   }
-  .navigation a {
-    display: inline-block;
-  }
   .navigation nav {
     float: none;
     padding: 1.25em 0; }
