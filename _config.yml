@@ -2,10 +2,9 @@
 # Site settings
 title: Michael Marzec
 name: michael marzec
-subtitle: assorted attempts at data science(y) projects #a (attempted) data science blog #hyperlink the "A" to this english stack exchange: https://english.stackexchange.com/questions/340141/a-or-an-before-word-in-parentheses
+subtitle: assorted attempts at data science(y) projects
 email: michaelmarzec11@gmail.com
 description:
-# baseurl: "https://michaelmarzec.github.io/"
 site_baseurl: "https://michaelmarzec.github.io/"
 url: https://michaelmarzec.github.io/
 twitter_username: 
