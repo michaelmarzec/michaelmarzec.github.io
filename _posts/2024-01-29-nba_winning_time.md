@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NBA Winning Time"
+title: "NBA-Winning Time: Introduction"
 comments: false
 ---
 
