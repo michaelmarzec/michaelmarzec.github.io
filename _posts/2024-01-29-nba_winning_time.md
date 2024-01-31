@@ -6,7 +6,7 @@ comments: false
 
 <h3 style="text-align: center;"><a href="https://nbawp.com/"><ins>nbawp.com</ins></a></h3>
 
-A basketball team’s performance is captured by the end result: whether a team wins or loses. Zooming in, analysts, fans, and curious NBA observers alike will evaluate performance through more detailed lenses, such as a team’s ‘Point Differential.’ Point Differential is the average of a team’s difference in final score across their games played. To many, this is a more insightful analysis of a team’s performance compared to their win-loss record, as simply put: good teams tend to win by more than bad teams, and great teams tend to win by more than good teams. However, like wins and losses, Point Differential focuses on the final score. I propose we take a look at every moment of a basketball game to better capture a team’s performance.
+A basketball team’s performance is captured by the end result: whether a team wins or loses. Zooming in, analysts, fans, and curious NBA observers alike will evaluate performance through more detailed lenses, such as a team’s ‘Point Differential.’ Point Differential is the average of a team’s difference in final score across their games played. To many, this is a more insightful analysis of a team’s performance than their win-loss record, as simply put: good teams tend to win by more than bad teams, and great teams tend to win by more than good teams. However, like wins and losses, Point Differential focuses on the final score. I propose we take a look at every moment of a basketball game to better capture a team’s performance.
 
 ### Background
 
@@ -20,7 +20,7 @@ As such, I set out to quantitatively capture if they were actually winning for t
 
 ### Objective
 
-My goal was to calculate what percent of time a team spends winning, losing, or tied aggregated across every game played. In addition, I wanted to understand if this information is impactful. In other words, like Point Differential, is a team’s ‘time spent winning’ (moving forward, I will call this Winning Time) predictive of in-season or post-season success. Similarly, assuming that certain teams over or underperform their Winning Time, why do they over or underperform, and what can it reveal about their team performance?
+My goal was to calculate what percent of time a team spends winning, losing, or tied aggregated across every game played. In addition, I wanted to understand if this information is impactful. In other words, like Point Differential, is a team’s ‘time spent winning’ (moving forward, I will call this *Winning Time*) predictive of in-season or post-season success? Similarly, assuming that certain teams over or underperform their Winning Time, why do they over or underperform, and what can it reveal about their team performance?
 
 ### Methodology
 
@@ -31,7 +31,7 @@ For example, if a game lasts 48 minutes (i.e., there is no overtime period), and
 - Losing Time: 4.17% (2/48)
 - Tied Time: 2.08% (1/48)
 
-To generate this data, I implemented a nightly AWS Lambda function that calculates each team’s winning, losing, and tied time and aggregates the results across each team’s season-long results. This data is then fed to <ins>[nbawp.com](nbawp.com)</ins>, which includes the aforementioned fields, along with each team’s actual wins, losses, Point Differential, expected wins based on Point Differential, and a comparison of Winning Time against Point Differential and Winning Percentage (all data are sourced from <ins>[cleaningtheglass.com](https://cleaningtheglass.com/)</ins> and <ins>[basketball-reference.com](https://basketballreference.com/)</ins>).
+To generate this data, I implemented a nightly AWS Lambda function that calculates each team’s winning, losing, and tied time and aggregates the results across each team’s season-long results. This data is then fed to <ins>[nbawp.com](https://nbawp.com/)</ins>, which includes the aforementioned fields, along with each team’s actual wins, losses, Point Differential, expected wins based on Point Differential, and a comparison of Winning Time against Point Differential and Winning Percentage (all data are sourced from <ins>[cleaningtheglass.com](https://cleaningtheglass.com/)</ins> and <ins>[basketball-reference.com](https://www.basketball-reference.com/)</ins>).
 
 ### Exploratory Analysis
 
@@ -48,14 +48,14 @@ As you can see in the following table, Point Differential had a 95% correlation 
 Consequently, as expected, Winning Time and Point Differential were highly correlated in the 22-23 and 23-24 seasons at 91% and 87%, respectively.
 
 <table><tr>
-<td> <img src="./assets/NBA-WP/wt_pd_corr.png" alt="Drawing" style="width: 200px;"/> </td>
+<td> <img src="./assets/NBA-WP/wt_pd_corr.png" alt="Drawing" style="width: 175px;"/> </td>
 </tr></table>
 
 This stoked a new curiosity: Can Winning Time and Point Differential provide any conceptually contrasting insights? Or, is Winning Time simply a similar (but most likely less predictive) indicator of a team’s performance? More on this later.
 
 Regarding post-season performance, I am evaluating post-season data from a single season (22-23), in which the most games played by any team is only 25 (by the Miami Heat) and the average games played is 10.8. Due to this, I am tentative to post this information altogether, however, caveat aside, the following results show (in my opinion) that the weak correlations are more representative of a need to expand the dataset than any substantive takeaway.
 
-I used post-season wins (as opposed to Win Percentage) as total wins better represents a successful post-season since a team that advances further into the playoffs (the ultimate objective) can win more games than one that loses in an earlier round. For example, in the 22-23 playoffs, Philadelphia had the second-highest Winning Percentage at 63% due to their first-round sweep despite eventually losing in the second round.
+I used post-season wins (as opposed to Win Percentage) as total wins better represents a successful post-season since a team that advances further into the playoffs (the ultimate objective) can win more games than one that loses in an earlier round. For example, in the 22-23 playoffs, Philadelphia had the second-highest Winning Percentage at 63% due to their first-round sweep despite subsequently losing in the second round.
 
 As seen below, regular-season Winning Time was inversely correlated with post-season wins at -7%, and regular-season Point Differential was correlated with post-season wins at 13%. Again, for the analysis to become meaningful, I believe it requires post-season data aggregated over various seasons.
 
