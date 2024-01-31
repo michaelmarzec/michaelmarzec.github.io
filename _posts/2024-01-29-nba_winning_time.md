@@ -42,15 +42,13 @@ First, I took a simple look at the relationship between Winning Time and in-seas
 As you can see in the following table, Point Differential had a 95% correlation with Winning Percentage in both seasons, while Winning Time had a 91% and 94% correlation in the 22-23 and 23-24 seasons, respectively. Seeing as I built a new metric on a bit of a whim (relative to an already widely accepted metric in Point Differential), I did not expect it to compare so similarly.
 
 <table><tr>
-<td> <img src="./assets/BAT-Crypto-Analysis/BAT_USD_Price_Plot.png" alt="Drawing" style="width: 350px;"/> </td>
-<td> <img src="./assets/BAT-Crypto-Analysis/BTC_USD_Price_Plot.png" alt="Drawing" style="width: 350px;"/> </td>
+<td> <img src="./assets/NBA-WP/in_season_wp_corr.png" alt="Drawing" style="width: 350px;"/> </td>
 </tr></table>
 
 Consequently, as expected, Winning Time and Point Differential were highly correlated in the 22-23 and 23-24 seasons at 91% and 87%, respectively.
 
 <table><tr>
-<td> <img src="./assets/BAT-Crypto-Analysis/rolling_correlation.png" alt="Drawing" style="width: 350px;"/> </td>
-<td> <img src="./assets/BAT-Crypto-Analysis/correlation_table.png" alt="Drawing" style="width: 550px;"/> </td>
+<td> <img src="./assets/NBA-WP/wt_pd_corr.png" alt="Drawing" style="width: 350px;"/> </td>
 </tr></table>
 
 This stoked a new curiosity: Can Winning Time and Point Differential provide any conceptually contrasting insights? Or, is Winning Time simply a similar (but most likely less predictive) indicator of a team’s performance? More on this later.
@@ -62,8 +60,7 @@ I used post-season wins (as opposed to Win Percentage) as total wins better repr
 As seen below, regular-season Winning Time was inversely correlated with post-season wins at -7%, and regular-season Point Differential was correlated with post-season wins at 13%. Again, for the analysis to become meaningful, I believe it requires post-season data aggregated over various seasons.
 
 <table><tr>
-<td> <img src="./assets/BAT-Crypto-Analysis/rolling_correlation.png" alt="Drawing" style="width: 350px;"/> </td>
-<td> <img src="./assets/BAT-Crypto-Analysis/correlation_table.png" alt="Drawing" style="width: 550px;"/> </td>
+<td> <img src="./assets/NBA-WP/post_season_corr.png" alt="Drawing" style="width: 350px;"/> </td>
 </tr></table>
  
 ### Outliers
@@ -86,7 +83,7 @@ As you can see below, in 2022-23, a team’s clutch net rating has a 72% correla
 
 Looking at 23-24, this gap is significantly wider. The clutch net rating and clutch Winning Percentage are similarly correlated with the difference in total Winning Percentage and Winning Time at 78% and 76%. However, the regular season Point Differential’s correlation was only 52%.
 
-<img src="./assets/BAT-Crypto-Analysis/validation_results.png" style="float: center; width: 450px">
+<img src="./assets/NBA-WP/delta_corr.png" style="float: center; width: 450px">
 
 This indicated that teams who significantly over or under-performed their Winning Time are likely doing so due to their clutch performance. There’s a lot more to be researched (and said) about the long-term implications (i.e., the predictive power of this discovery), but I still find this correlation interesting!
 
