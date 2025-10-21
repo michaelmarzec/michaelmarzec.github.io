@@ -18,7 +18,7 @@ During development, I aimed to create a tech stack that will (for cheap, if not 
 
 #### Data Extraction
 
-All data is extracted (nightly) using Python (BeautifulSoup, UrlLib, etc.), automated via AWS Lambda, stored in S3, and scraped from Ben Falk’s <ins>[cleaningtheglass.com](https://cleaningtheglass.com/)</ins>. A couple of lessons learned:
+All data is extracted (nightly) using Python (BeautifulSoup, urllib, etc.), automated via AWS Lambda, stored in S3, and scraped from Ben Falk’s <ins>[cleaningtheglass.com](https://cleaningtheglass.com/)</ins>. A couple of lessons learned:
 - When developing an AWS Lambda function, keep it lightweight. There is a compressed limit of 50mb.
 - In this instance, I adjusted from storing data in a Parquet file (my preferred local storage method) to a CSV, so I could remove the PyArrow library.
 - <ins>[Linked](https://github.com/keithrozario/Klayers/blob/master/deployments/python3.8/arns/us-east-2.csv)</ins> is a fantastic resource for Python ARNs.
@@ -29,8 +29,8 @@ The web framework is developed using the Flask library. Data is ingested from S3
 
 The HTML table template uses a basic structure and a simple CSS file (i.e., the bulk of the research/work was completed via the Flask-Table library). 
 
-The HTML time-series template uses chart.js and a slightly more complex CSS file:
-- I manually created a json set for each team which strikes me as an opportunity for improvement via some type of an automated for-loop solution.
+The HTML time-series template uses Chart.js and a slightly more complex CSS file:
+- I manually created a JSON set for each team which strikes me as an opportunity for improvement via some type of an automated for-loop solution.
 - My flex-wrapper class was a lifesaver. I struggled to station the footer below the chart, but the combination of ‘display’, ‘flex-direction’, and ‘justify-content’ resolved the issue.
 
 #### Deployment
@@ -44,8 +44,7 @@ In addition, Zappa allows for custom domains. The following is a quick walkthrou
 - In the AWS Certificate Manager, request a ‘Public Certificate’, enter a domain name, and request a DNS validation. Once this is available, select the option to ‘Create records in Route 53’.
 - In AWS Route 53, there is an NS-Type record name for your domain. Copy the four NS ‘routes’ (e.g., ns-1000.awsdns-11.org.), open the DNS:Custom Name Servers tab in Google Domains, and save the four different NS values.
 - The custom domain should now be active. Take the ARN value from your AWS Certificate page, and add the following in your zappa_settings.json file:
-“certificate_arn”: “arn_value”
-“Domain”:”custom_domain”
+“certificate_arn”: “arn_value”, “Domain” : "custom_domain”
 - Run a zappa update *project name* and your domain should be live.
 
 #### Sign Off

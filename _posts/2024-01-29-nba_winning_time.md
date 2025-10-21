@@ -79,7 +79,7 @@ I also wondered if this phenomenon could somehow be attributed to the NBA’s <i
 
 I decided to evaluate if there was a correlation between the delta of Winning Time and Winning Percentage with an NBA team’s clutch performance. I used the <ins>[NBA’s clutch numbers](https://www.nba.com/stats/teams/clutch-advanced)</ins>, as defined by nba.com (last five minutes with a difference in score of 5 points or less).
 
-As you can see below, in 2022-23, a team’s clutch net rating has a 72% correlation with the difference between Winning Percentage and Winning Time, and a team’s clutch Winning Percentage was 70% correlated. In comparison, the team’s regular reason Point Differential was slightly less correlated at 66%.
+As you can see below, in 2022-23, a team’s clutch net rating has a 72% correlation with the difference between Winning Percentage and Winning Time, and a team’s clutch Winning Percentage was 70% correlated. In comparison, the team’s regular season Point Differential was slightly less correlated at 66%.
 
 Looking at 23-24, this gap is significantly wider. The clutch net rating and clutch Winning Percentage are similarly correlated with the difference in total Winning Percentage and Winning Time at 78% and 76%. However, the regular season Point Differential’s correlation was only 52%.
 

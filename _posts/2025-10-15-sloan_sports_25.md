@@ -6,7 +6,7 @@ comments: false
 
 
 
-I am back after another batch of Sloan Sports Research papers. This year, I'll stick to three that caught my eye.
+I am back after another batch of Sloan Sports Research papers. This year I'm sticking with three that caught my eye.
 
 
 ### [CoachAI+ Badminton Environment: A Realistic Badminton Game Simulator for Enhancing Player Performance](https://www.sloansportsconference.com/research-papers/coachai-badminton-environment-realistic-badminton-game-simulator-for-enhancing-player-performance)
@@ -29,7 +29,7 @@ Improving forecasting accuracy in the NBA (especially around the NBA draft) feel
 
 Side note: this paper reminds me of last year’s [Measuring Individual Competitiveness](https://michaelmarzec.github.io/sloans_sports_24) paper -- another approach to quantifying 'intangible' traits... an ongoing evolution in sports analysis.
 
-Returning to "psychological metrics", this paper uses a narrowed linguistics dataset that captures interviews and press conferences from NCAA championship games and evaluates using lightGBM and survival models (cox-proportional hazard and kaplan-meier).
+Returning to "psychological metrics", this paper uses a narrowed linguistics dataset that captures interviews and press conferences from NCAA championship games and evaluates using lightGBM and survival models (Cox-proportional hazard and Kaplan-Meier).
 
 The results are promising. Psychological metrics alone outperform random baselines, and adding LIWC (Linguistic Inquiry and Word Count) features consistently improves both performance and attribute-based models. Still, the dataset feels narrow, leaving room for much broader validation.
 
@@ -47,6 +47,6 @@ They employ a doubly robust estimation approach, combining outcome regression (p
 
 The paper also walks through a series of thorough validation tests: covariate balancing (via standardized mean difference), placebo and subsampling checks, goodness-of-fit assessments, and sensitivity analyses (testing robustness to omitted confounders).
 
-I am genuinely impressed by its focus on causality. A lot of research -— academic and corporate alike —- chase novelt concepts but lose sight of the underlying objective: identifying causal drivers of performance, not just correlations. This paper does not. It demonstrates causality convincingly, validates its findings against real-world benchmarks like PFF rankings and All-Pro selections, and even outlines natural extensions such as incorporating weather and crowd effects.
+I am genuinely impressed by its focus on causality. A lot of research -— academic and corporate alike —- chase novel concepts but lose sight of the underlying objective: identifying causal drivers of performance, not just correlations. This paper does not. It demonstrates causality convincingly, validates its findings against real-world benchmarks like PFF rankings and All-Pro selections, and even outlines natural extensions such as incorporating weather and crowd effects.
 
 I found this research genuinely exciting. It is production-grade and practical. The framework could easily be adapted to other sports, like using tracking data to measure the causal impact of defenders in the NBA. I recommend giving it a read!

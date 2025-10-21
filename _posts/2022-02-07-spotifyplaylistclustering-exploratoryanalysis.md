@@ -17,9 +17,9 @@ Spotify provides a fantastic <ins>[API](https://developer.spotify.com/documentat
 2. Extract key features for each song.
 3. Create and populate playlists.
 
-The first and third points are fairly self-explanatory, but the ‘key features’ are a custom Spotify API output. These include characteristics like ‘danceability’, ’energy’, and ‘tempo’ among others listed <ins>[here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)</ins>. Thus, using these API functions, I can easily download a list of every liked song, about 12 descriptive variables for each song, and ultimately, group these songs into new playlists.
+The first and third points are fairly self-explanatory, but the ‘key features’ are a custom Spotify API output. These include characteristics like ‘danceability’, 'energy’, and ‘tempo’ among others listed <ins>[here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)</ins>. Thus, using these API functions, I can easily download a list of every liked song, about 12 descriptive variables for each song, and ultimately, group these songs into new playlists.
 
-In my opinion, this solution’s most significant assumption is its reliance on Spotify’s pre-determined audio features. While they are convenient and easy to use, the solution is dependent on Spotify’s calculated audio features reliably encapsulating each song’s, for lack of a better word, vibe. Essentially, the audio features provide a great foundation for this project, but given the appropriate access, I would love to leverage audio files (e.g., .wav data) to analyze the raw audio data via a library such as <ins>[Librosa](https://librosa.org/doc/latest/index.html)</ins>.
+In my opinion, this solution’s most significant assumption is its reliance on Spotify’s pre-determined audio features. While they are convenient and easy to use, the solution is dependent on Spotify’s calculated audio features reliably encapsulating each song’s, for lack of a better word, vibe. Essentially, the audio features provide a great foundation for this project, but given the appropriate access, I would love to leverage audio files (e.g., .wav data) to analyze the raw audio data via a library such as <ins>[ibrosa](https://librosa.org/doc/latest/index.html)</ins>.
 
 #### PCA
 
@@ -90,9 +90,9 @@ In all honesty, the cluster plots don’t leave me with a strong preference. The
 
 #### Conclusion and Future Efforts
 
-Altogether, I am happy with my inital attempt at automated playlists. The playlists aren’t perfect (to be expected) but they seem to have some coherent similarities. A few additional concluding thoughts and ideas for future updates:
+Altogether, I am happy with my initial attempt at automated playlists. The playlists aren’t perfect (to be expected) but they seem to have some coherent similarities. A few additional concluding thoughts and ideas for future updates:
 
-- I would like to add an output report (and/or title the playlists) based on the various audio features. For example, whichever playlist has the highest average ‘danceability’ could be named “autoPlaylist_dancetracks’.
+- I would like to add an output report (and/or title the playlists) based on the various audio features. For example, whichever playlist has the highest average ‘danceability’ could be named 'autoPlaylist_dancetracks’.
 - I want to develop end-to-end deployment for a casual end user. At a bare minimum, the parameters could be limited to the Spotify Client ID, Spotify Secret Code, Spotify username, and number of desired playlists. For advanced users, additional options could include the principal component threshold, preferred clustering algorithm, and whether to print the scree and inertia plots.
     - Ideally, this could be completed via a simple hosted website or a local executable.
 - I am still considering what a model rerun should look like… Should it retain the original model and predict (i.e., place) the newly liked songs into the existing playlists? Or should it delete all cluster-based playlists, retrain and recreate the playlists from scratch?

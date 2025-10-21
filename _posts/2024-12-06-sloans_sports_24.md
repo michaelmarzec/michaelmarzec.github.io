@@ -8,7 +8,7 @@ comments: false
 
 Dating to 2017, I’ve developed a habit of reading about five papers from the Sloan Sports Analytics Conference’s research paper competition. This tradition started after I attended the 2017 conference in person–the only time I’ve attended live. I sat in on a few keynote speakers with recognizable names (e.g., Bob Myers, Nate Silver, Mark Cuban) but found myself drawn to the research paper presentations. They felt more aligned with the innovative spirit of the conference–or perhaps with my bias towards the underlying data-driven work.
 
-Regardless, I figured I might as well begin capturing my notes for posterity sake. And with that said, here are my brief, unorganized, and long overdue thoughts on my five favorite papers from the 2024 conference.
+Regardless, I figured I might as well begin capturing my notes for posterity's sake. And with that said, here are my brief, unorganized, and long overdue thoughts on my five favorite papers from the 2024 conference.
 
 
 ### [Approaching In-Venue Quality Tracking from Broadcast Video using Generative AI](https://assets-global.website-files.com/5f1af76ed86d6771ad48324b/65bfe3cc13cac76100ab0611_193972%20-%20Approaching%20In-Venue%20Quality%20Tracking%20from%20Broadcast%20Video%20using%20Generative%20AI.pdf)
@@ -41,7 +41,7 @@ The paper also includes a [web app](https://sportdataviz.syr.edu/TrueShotChart/)
 A key focus of the paper is refining our understanding of the value of a three-pointer versus a two-pointer. It notes:
 >"In 2021-22, there was no significant leaguewide three-point premium or dispremium when considering aggregations of traditional shot charts. However, when considering aggregations of true shot charts, we find a significant and deepening three-point dispremium at the league level since the 2018-19 season."
 
-Interestingly, in the 22-23 and 23-24 seasons, the average three-point attempts (3PA) declined indicating a potential league-wide adjustment to a dispremium. However, in the 24-25 season, as of writing this post, there’s been a sharp incline to 37.4 3PA per game (from 35.1 in 23-24) suggesting that team’s did not actually recognize a dispremium.
+Interestingly, in the 22-23 and 23-24 seasons, the average three-point attempts (3PA) declined indicating a potential league-wide adjustment to a dispremium. However, in the 24-25 season, as of writing this post, there’s been a sharp incline to 37.4 3PA per game (from 35.1 in 23-24) suggesting that teams did not actually recognize a dispremium.
 
 Altogether, 3PA is a piece to the puzzle, rather than the puzzle itself. This paper highlights that there are other factors impacting offensive efficiency, but it’s enlightening (and a bit refreshing) to read a quantitative outlook on a 3-point premium cap.
 
@@ -53,9 +53,9 @@ This paper introduces relevance-based prediction algorithms to NBA draft prospec
 
 Beyond improving prediction accuracy, the authors keenly highlight another critical benefit to this approach: model transparency. Relevance-based algorithms provide clear insights into how historical comparisons influence predictions. For example, the paper highlights Mark Williams' top three comparisons: TJ Leaf, Marvin Bagley and Brice Johnson. In other words, those annoying (and often arbitrary) draft-day player comparisons can finally leverage quantitative reasoning, and an analytics team can better translate its models for the front office.
 
-Overall, I find using relevance-based predictions to be a novel and useful approach. However, the paper acknowledges one of its own short-comings: a lack of applied independent variables. Certainly, a production-ready version would incorporate more college data and player attributes (e.g., wingspan). 
+Overall, I find using relevance-based predictions to be a novel and useful approach. However, the paper acknowledges one of its own shortcomings: a lack of applied independent variables. Certainly, a production-ready version would incorporate more college data and player attributes (e.g., wingspan). 
 
-A personal gripe is the use of _minutes played_ as a dependent variable. Minutes played can be highly influenced by draft position—higher picks often receive more minutes due to financial investment and public expectations. I’ve read various papers and models that use an all-in-one metrics like VORP, EPM, etc. and look at performance over a player's first few years, career lifespan, or career peak, depending on what you are optimizing for. But again, this can be easily fixed if the model was translated to a production state.
+A personal gripe is the use of _minutes played_ as a dependent variable. Minutes played can be highly influenced by draft position—higher picks often receive more minutes due to financial investment and public expectations. I’ve read various papers and models that use an all-in-one metric like VORP, EPM, etc. and look at performance over a player's first few years, career lifespan, or career peak, depending on what you are optimizing for. But again, this can be easily fixed if the model was translated to a production state.
 
 Overall, relevance-based predictions offer a compelling way to enhance NBA draft modeling, blending accuracy, transparency, and practicality to bring new rigor to a high-stakes process.
 

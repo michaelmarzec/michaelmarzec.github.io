@@ -26,9 +26,9 @@ My objective is to evaluate which of the following strategies would provide the 
 
 I performed this evaluation using the date range of 1/1/2021 to 2/28/2022 but developed the solution with the intention to eventually progress it to an automated pipeline that provides daily updates of each strategy.
  
-I presumed that I receive a distribution of 100 BAT on the first of every month. This is a huge exaggeration of my monthly distributions and assumes a consistent monthly amount, but it’s more fun to work with large numbers (and see future efforts for additional related thoughts).
+I presumed that I receive a distribution of 100 BAT on the first of every month. This is a huge exaggeration of my monthly distributions and assumes a consistent monthly amount, but it’s more fun to work with large numbers (and see Future Efforts for additional related thoughts).
  
-Using ‘Open’ and ‘Close’ pricing for stock market analysis can be a bit more clear cut as the market opens and closes at 9:30am and 4pm est. I used daily close prices for BAT and Bitcoin, which approximately represents midnight and 12:01am, respectively. I expand in my Future Efforts section, but for this to become a reliable measure of ROI, I would either need to automate any executed trades to occur at midnight or adjust my analysis to use whatever time of day I would prefer to manually trade at.
+Using ‘Open’ and ‘Close’ pricing for stock market analysis can be a bit more clear cut as the market opens and closes at 9:30am and 4pm EST. I used daily close prices for BAT and Bitcoin, which approximately represents midnight and 12:01am, respectively. I expand in my Future Efforts section, but for this to become a reliable measure of ROI, I would either need to automate any executed trades to occur at midnight or adjust my analysis to use whatever time of day I would prefer to manually trade at.
 
 ### Data Extraction
 
@@ -45,14 +45,14 @@ There is a lot of similarity between the following BAT/USD and BTC/USD price plo
 <td> <img src="./assets/BAT-Crypto-Analysis/BTC_USD_Price_Plot.png" alt="Drawing" style="width: 350px;"/> </td>
 </tr></table>
 
-I also plotted their rolling correlations and a quick summary of correlation table:
+I also plotted their rolling correlations and a quick summary correlation table:
 
 <table><tr>
 <td> <img src="./assets/BAT-Crypto-Analysis/rolling_correlation.png" alt="Drawing" style="width: 350px;"/> </td>
 <td> <img src="./assets/BAT-Crypto-Analysis/correlation_table.png" alt="Drawing" style="width: 550px;"/> </td>
 </tr></table>
 
-Quickly, we can see that BAT/USD and and BTC/USD are highly correlated (87%). This indicates trading between the two likely has marginal upside. However, we can also see negative correlations between BAT/BTC and both BAT/USD and BTC/USD. Initially, I figured this is likely intertwined with BTC pricing (per USD) – I expand on this thought in the Future Efforts section. However, for now, I’ll focus on modeling BAT against the USD, rather than BTC.
+Quickly, we can see that BAT/USD and BTC/USD are highly correlated (87%). This indicates trading between the two likely has marginal upside. However, we can also see negative correlations between BAT/BTC and both BAT/USD and BTC/USD. Initially, I figured this is likely intertwined with BTC pricing (per USD) – I expand on this thought in the Future Efforts section. However, for now, I’ll focus on modeling BAT against the USD, rather than BTC.
  
 ### Model Development
 
@@ -64,7 +64,7 @@ As mentioned in the Objective section, I created a function to evaluate each of 
 
 The ‘hold all investments’ function is relatively straightforward. On the first of every month, the function assumes that the portfolio receives 100 BATs and either adds it to the BAT total, or uses that day’s BAT/BTC or BAT/USD conversion rates to trade it for BTC or USD, respectively. It continuously adds these amounts through the life of the portfolio. The daily values are all based on that day’s conversion rate (i.e., if the portfolio would have 200 BAT on 1/15/2022 and each BAT was worth $0.50, then the portfolio’s value is $100). 
 
-An XGBoost time-series model requires a bit of nuanced curation. <ins>[Linked](https://machinelearningmastery.com/xgboost-for-time-series-forecasting/)</ins> is a useful walkthrough on a relatively straightforward application of XGBoost for time-series modeling (note that within the article, the ‘walk-forward validation’ function is inappropriately labeled … it’s actually an expanding-window function). 
+An XGBoost time-series model requires a bit of nuanced curation. <ins>[Linked](https://machinelearningmastery.com/xgboost-for-time-series-forecasting/)</ins> is a useful walkthrough on a relatively straightforward application of XGBoost for time-series modeling (note that within the article, the ‘walk-forward validation’ function is inappropriately labeled ... it’s actually an expanding-window function). 
 
 The key is structuring data to use the past X days to predict the future. The tricky (but absolutely necessary) part is to confirm that the model only uses historical data to predict future results. Typically, I would shuffle all of my data, split it into a train and test set, and train the model accordingly. However, I cannot randomly shuffle my data in this instance. If I were to shuffle all of the data, the training dataset could include data points that have occurred after the date of certain test data points. For example, if my dataset consisted of data from February and March, I need to use February data to train my model to predict March. In application, if I wanted to predict tomorrow’s price using the last seven days, I cannot use data from next week as of course that data has literally not yet occurred.
 
@@ -117,7 +117,7 @@ The trading strategy returned the highest value on the final date. However, per 
 
 - Implement an automated pipeline
 	- My next objective is to implement a fully automated end-to-end pipeline. I envision using AWS Lambda to schedule a daily data extraction and a daily model retraining. 
-	- I would like to add a simple front-end (likely a Flask page hosted using <ins>[Zappa](https://github.com/zappa/Zappa)</ins>) that can visualize model metric and ROI tracking.
+	- I would like to add a simple front-end (likely a Flask page hosted using <ins>[Zappa](https://github.com/zappa/Zappa)</ins>) that can visualize model metrics and ROI tracking.
 	- Additionally, I’d like to update the pipeline to extract the amount of BAT I actually collect each month (rather than the parameterized 100 BAT).
 - Implement automated trading and/or notifications
 	- Using the Coinbase API, I could automate trades per the model’s recommendation. This would allow the actual trades to remain aligned to the analysis (i.e., so they can occur at midnight).
