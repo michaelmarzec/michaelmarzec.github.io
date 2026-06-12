@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "atppoints.com and wtapoints.com are Live!"
+title: "atppoints.com and wtapoints.com"
 comments: false
 ---
 
 <h3 style="text-align: center;"><a href="https://atppoints.com/"><ins>atppoints.com</ins></a> | <a href="https://wtapoints.com/"><ins>wtapoints.com</ins></a></h3>
 
-ATP and WTA rankings are fascinating in that they determine player seedings but are rarely reflective of the true order of player ability. They're global to all surfaces (as they should be), but entering a tournament, favorites are surface-specific. It's already well-reflected in win probability models (e.g., gambling odds, Elo ratings) that rankings don't always equate to being better than your opponent. Additionally, points can be unevenly distributed: a player might be heavily reliant on a single tournament, or their points might be skewed toward a specific level of competition (e.g., dominating 500s but struggling against higher-level competition in 1000s or Grand Slams). I wanted more nuance when evaluating a player's ranking, and I couldn't find a tool that provided it, so I built one.
+ATP and WTA rankings are complex in that they determine player seedings but are rarely reflective of the true order of player ability. They're global to all surfaces (as they should be), but entering a tournament, favorites are surface-specific. It's already well-reflected in win probability models (e.g., gambling odds, Elo ratings) that rankings don't always equate to being better than your opponent. Additionally, points can be unevenly distributed: a player might be heavily reliant on a single tournament, or their points might be skewed toward a specific level of competition (e.g., dominating 500s but struggling against higher-level competition in 1000s or Grand Slams). I wanted more nuance when evaluating a player's ranking, and I couldn't find a tool that provided it, so I built one.
 
 ### What is it?
 
